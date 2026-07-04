@@ -17,7 +17,6 @@
 
 <title>Srikrishna Karanam</title>
 
-
 <style>
 
 :root {
@@ -29,23 +28,18 @@
     --bg: #ffffff;
 }
 
-
 * {
     box-sizing: border-box;
 }
-
 
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
     margin: 0;
-
     background: var(--bg);
     color: var(--text);
-
     font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -53,934 +47,593 @@ body {
         Helvetica,
         Arial,
         sans-serif;
-
     -webkit-font-smoothing: antialiased;
 }
-
 
 .container {
     width: min(920px, calc(100% - 48px));
     margin: 0 auto;
 }
 
-
 a {
     color: inherit;
 }
 
 
-
 /* HERO */
-
 
 .hero {
     padding: 88px 0 64px;
 }
 
-
 .hero-main {
     display: grid;
-
     grid-template-columns: 148px 1fr;
-
     gap: 40px;
-
     align-items: start;
 }
 
-
 .portrait {
     width: 148px;
-
     aspect-ratio: 1 / 1.15;
-
     object-fit: cover;
     object-position: center;
-
     border-radius: 18px;
-
     background: #f5f5f7;
 }
-
 
 .hero-content {
     min-width: 0;
 }
 
-
 h1 {
     margin: -5px 0 10px;
-
     font-size: clamp(36px, 5vw, 52px);
-
     line-height: 1.05;
-
     letter-spacing: -0.045em;
-
     font-weight: 650;
 }
 
-
 .thesis {
     max-width: 680px;
-
     margin: 0;
-
     font-size: clamp(21px, 2.7vw, 28px);
-
     line-height: 1.28;
-
     letter-spacing: -0.025em;
-
     font-weight: 500;
 }
 
-
 .bio {
     max-width: 680px;
-
     margin: 22px 0 0;
-
     color: var(--muted);
-
     font-size: 15px;
-
     line-height: 1.65;
 }
-
 
 .bio a,
 .contact a,
 .paper-meta a {
-
     color: var(--link);
-
     text-decoration: none;
 }
-
 
 .bio a:hover,
 .contact a:hover,
 .paper-meta a:hover {
-
     text-decoration: underline;
 }
 
-
 .contact {
-
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 6px 16px;
-
     margin-top: 20px;
-
     color: var(--muted);
-
     font-size: 14px;
 }
-
 
 .contact a {
     white-space: nowrap;
 }
 
 
-
 /* PROOF STRIP */
 
-
 .proof {
-
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 28px;
-
     padding: 34px 0 0;
-
     margin-top: 42px;
-
     border-top: 1px solid var(--line);
 }
 
-
 .proof-value {
-
     display: block;
-
     margin-bottom: 7px;
-
     font-size: 20px;
-
     line-height: 1.15;
-
     letter-spacing: -0.025em;
-
     font-weight: 600;
 }
 
-
 .proof-value a {
-
     text-decoration: none;
 }
 
-
 .proof-value a:hover {
-
     color: var(--link);
 }
 
-
 .proof-label {
-
     color: var(--muted);
-
     font-size: 13px;
-
     line-height: 1.45;
 }
 
 
-
 /* SECTIONS */
 
-
 .section {
-
     padding: 72px 0;
-
     border-top: 1px solid var(--line);
 }
 
-
 .section-heading {
-
     display: grid;
-
     grid-template-columns: 220px 1fr;
-
     gap: 40px;
-
     margin-bottom: 38px;
 }
 
-
 h2 {
-
     margin: 0;
-
     font-size: 19px;
-
     line-height: 1.25;
-
     letter-spacing: -0.015em;
-
     font-weight: 600;
 }
 
-
 .section-intro {
-
     max-width: 610px;
-
     margin: 0;
-
     color: var(--muted);
-
     font-size: 15px;
-
     line-height: 1.6;
 }
 
 
-
 /* PRODUCT WORK */
 
-
 .impact-grid {
-
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 38px 28px;
 }
 
-
 .impact {
-
     display: block;
-
     text-decoration: none;
 }
 
-
 .impact-image {
-
     width: 100%;
-
     aspect-ratio: 16 / 9;
-
     display: block;
-
     object-fit: cover;
-
     border-radius: 16px;
-
     background: #f5f5f7;
-
     transition: transform 180ms ease;
 }
 
-
 .impact:hover .impact-image {
-
     transform: translateY(-2px);
 }
 
-
 .impact h3 {
-
     margin: 14px 0 5px;
-
     font-size: 17px;
-
     line-height: 1.3;
-
     letter-spacing: -0.015em;
-
     font-weight: 600;
 }
 
-
 .impact p {
-
     margin: 0;
-
     color: var(--muted);
-
     font-size: 14px;
-
     line-height: 1.5;
 }
-
 
 
 /* WIDE PRODUCT STORIES */
 
-
 .impact-wide {
-
     grid-column: 1 / -1;
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 28px;
-
     align-items: center;
 }
 
-
 .impact-wide h3 {
-
     margin-top: 0;
 }
 
 
-
 /* SIEMENS */
 
-
 .siemens-image {
-
     object-fit: contain;
-
     object-position: center;
-
     background: #ffffff;
 }
 
 
-
 /* TAG AND TRACK */
 
-
 .impact-kicker {
-
     margin-bottom: 8px;
-
     color: var(--muted);
-
     font-size: 12px;
-
     font-weight: 600;
-
     letter-spacing: 0.04em;
-
     text-transform: uppercase;
 }
 
+.phd-case {
+    text-transform: none;
+}
 
 .tag-track {
-
     margin-top: 10px;
 }
 
-
 .tag-track-image {
-
     object-fit: cover;
-
     object-position: center;
 }
 
 
-
 /* PAPERS */
 
-
 .papers {
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 28px 44px;
 }
 
-
 .paper {
-
     min-width: 0;
 }
 
-
 .paper-title {
-
     font-size: 15px;
-
     line-height: 1.48;
-
     font-weight: 500;
 }
 
-
 .paper-meta {
-
     margin-top: 6px;
-
     color: var(--muted);
-
     font-size: 13px;
-
     line-height: 1.4;
 }
 
-
 .paper-meta a {
-
     margin-left: 7px;
 }
 
 
-
 /* RESEARCH COMMUNITY */
 
-
 .service-lead {
-
     max-width: 680px;
-
     margin: 0 0 38px;
-
     font-size: 20px;
-
     line-height: 1.4;
-
     letter-spacing: -0.02em;
 }
 
-
 .service-list {
-
     max-width: 760px;
 }
 
-
 .service-item {
-
     display: grid;
-
     grid-template-columns: 150px 1fr;
-
     gap: 24px;
-
     padding: 18px 0;
-
     border-top: 1px solid var(--line);
 }
 
-
 .service-role {
-
     font-size: 14px;
-
     font-weight: 600;
 }
 
-
 .service-detail {
-
     color: var(--muted);
-
     font-size: 14px;
-
     line-height: 1.5;
 }
 
 
-
 /* FOOTER */
 
-
 footer {
-
     padding: 36px 0 60px;
-
     color: var(--faint);
-
     font-size: 12px;
 }
 
 
-
 /* TABLET */
-
 
 @media (max-width: 760px) {
 
-
     .container {
-
         width: min(100% - 36px, 920px);
     }
 
-
     .hero {
-
         padding: 48px 0 52px;
     }
 
-
     .hero-main {
-
         grid-template-columns: 104px 1fr;
-
         gap: 24px;
     }
 
-
     .portrait {
-
         width: 104px;
-
         border-radius: 14px;
     }
 
-
     h1 {
-
         font-size: clamp(34px, 8vw, 44px);
     }
 
-
     .thesis {
-
         font-size: 22px;
     }
 
-
     .proof {
-
         grid-template-columns: 1fr 1fr;
-
         gap: 30px 24px;
     }
 
-
     .section {
-
         padding: 56px 0;
     }
 
-
     .section-heading {
-
         grid-template-columns: 1fr;
-
         gap: 10px;
-
         margin-bottom: 32px;
     }
 
-
     .papers {
-
         grid-template-columns: 1fr;
-
         gap: 26px;
     }
-
 }
-
 
 
 /* MOBILE */
 
-
 @media (max-width: 560px) {
 
-
     .container {
-
         width: calc(100% - 32px);
     }
 
-
     .hero {
-
         padding: 32px 0 44px;
     }
 
-
     .hero-main {
-
         display: grid;
-
         grid-template-columns: 76px 1fr;
-
         gap: 0 18px;
-
         align-items: start;
     }
 
-
     .portrait {
-
         grid-column: 1;
-
         grid-row: 1;
-
         width: 76px;
-
         aspect-ratio: 1 / 1.15;
-
         border-radius: 12px;
     }
 
-
     .hero-content {
-
         display: contents;
     }
 
-
     h1 {
-
         grid-column: 2;
-
         grid-row: 1;
-
         align-self: center;
-
         margin: 0;
-
         font-size: clamp(30px, 9vw, 40px);
-
         line-height: 1;
-
         letter-spacing: -0.045em;
     }
 
-
     .thesis {
-
         grid-column: 1 / -1;
-
         grid-row: 2;
-
         max-width: none;
-
         margin-top: 24px;
-
         font-size: 22px;
-
         line-height: 1.3;
     }
 
-
     .bio {
-
         grid-column: 1 / -1;
-
         grid-row: 3;
-
         max-width: none;
-
         margin-top: 20px;
-
         font-size: 15px;
-
         line-height: 1.65;
     }
 
-
     .contact {
-
         grid-column: 1 / -1;
-
         grid-row: 4;
-
         margin-top: 18px;
-
         gap: 10px 16px;
     }
 
-
     .proof {
-
         grid-template-columns: 1fr;
-
         gap: 0;
-
         margin-top: 34px;
-
         padding-top: 0;
     }
 
-
     .proof > div {
-
         padding: 20px 0;
-
         border-bottom: 1px solid var(--line);
     }
 
-
     .proof > div:last-child {
-
         border-bottom: 0;
     }
 
-
     .proof-value {
-
         margin-bottom: 5px;
-
         font-size: 19px;
     }
 
-
     .proof-label {
-
         display: block;
-
         max-width: 320px;
     }
 
-
     .section {
-
         padding: 48px 0;
     }
 
-
     .section-heading {
-
         margin-bottom: 28px;
     }
 
-
     h2 {
-
         font-size: 20px;
     }
 
-
     .section-intro {
-
         font-size: 14px;
     }
 
-
     .impact-grid {
-
         grid-template-columns: 1fr;
-
         gap: 36px;
     }
 
-
     .impact-image {
-
         border-radius: 14px;
     }
 
-
     .impact h3 {
-
         margin-top: 12px;
     }
 
-
     .impact-wide {
-
         grid-column: auto;
-
         display: block;
     }
 
-
     .impact-wide h3 {
-
         margin-top: 12px;
     }
 
-
     .impact-kicker {
-
         margin-top: 14px;
     }
 
-
     .tag-track {
-
         margin-top: 0;
     }
 
-
     .papers {
-
         gap: 0;
     }
 
-
     .paper {
-
         padding: 20px 0;
-
         border-top: 1px solid var(--line);
     }
 
-
     .paper:last-child {
-
         border-bottom: 1px solid var(--line);
     }
 
-
     .paper-title {
-
         font-size: 15px;
     }
 
-
     .service-lead {
-
         margin-bottom: 30px;
-
         font-size: 19px;
     }
 
-
     .service-item {
-
         grid-template-columns: 1fr;
-
         gap: 5px;
-
         padding: 18px 0;
     }
 
-
     footer {
-
         padding: 30px 0 44px;
     }
-
 }
-
 
 
 /* VERY SMALL PHONES */
 
-
 @media (max-width: 380px) {
 
-
     .container {
-
         width: calc(100% - 24px);
     }
 
-
     .hero-main {
-
         grid-template-columns: 64px 1fr;
-
         gap: 0 14px;
     }
 
-
     .portrait {
-
         width: 64px;
-
         border-radius: 10px;
     }
 
-
     h1 {
-
         font-size: 29px;
     }
 
-
     .thesis {
-
         font-size: 20px;
     }
-
 }
 
 </style>
 
 </head>
 
-
-
 <body>
-
 
 <div class="container">
 
 
-
 <!-- HERO -->
-
 
 <header class="hero">
 
-
     <div class="hero-main">
-
 
         <img
             class="portrait"
@@ -988,22 +641,16 @@ footer {
             alt="Srikrishna Karanam"
         >
 
-
         <div class="hero-content">
-
 
             <h1>
                 Srikrishna Karanam
             </h1>
 
-
             <p class="thesis">
-
                 I develop novel computer vision and machine learning ideas
                 and take them to real-world AI products.
-
             </p>
-
 
             <p class="bio">
 
@@ -1047,195 +694,134 @@ footer {
 
             </p>
 
-
             <div class="contact">
 
-
                 <a href="mailto:skaranam@adobe.com">
-
                     skaranam@adobe.com
-
                 </a>
-
 
                 <a
                     href="https://scholar.google.com/citations?user=G2-skyUAAAAJ&hl=en"
                     target="_blank"
                     rel="noopener"
                 >
-
                     Google Scholar
-
                 </a>
-
 
                 <a
                     href="https://dblp.org/pid/161/6110.html"
                     target="_blank"
                     rel="noopener"
                 >
-
                     DBLP
-
                 </a>
-
 
                 <a
                     href="https://www.lens.org/lens/search/patent/list?q=srikrishna%20karanam&p=0&n=10&s=_score&d=%2B&f=false&e=false&l=en&authorField=author&dateFilterField=publishedDate&orderBy=%2B_score&presentation=false&preview=true&stemmed=true&useAuthorId=false&types.must=GRANTED_PATENT"
                     target="_blank"
                     rel="noopener"
                 >
-
                     Patents
-
                 </a>
-
 
             </div>
 
-
         </div>
 
-
     </div>
-
 
 
     <!-- PROOF STRIP -->
 
-
     <div class="proof">
 
-
         <div>
 
             <span class="proof-value">
-
                 Shipped AI
-
             </span>
 
             <span class="proof-label">
-
-                Enterprise AI · Healthcare · Industrial Automation
-
+                Enterprise AI · Healthcare · Industrial Automation · Public Safety
             </span>
 
         </div>
 
 
-
         <div>
 
             <span class="proof-value">
-
                 Research
-
             </span>
 
             <span class="proof-label">
-
-                CVPR · ECCV · ICCV · and other leading venues
-
+                50+ papers · CVPR · ECCV · ICCV · and other leading venues
             </span>
 
         </div>
 
 
-
         <div>
 
-
             <span class="proof-value">
-
 
                 <a
                     href="https://www.lens.org/lens/search/patent/list?q=srikrishna%20karanam&p=0&n=10&s=_score&d=%2B&f=false&e=false&l=en&authorField=author&dateFilterField=publishedDate&orderBy=%2B_score&presentation=false&preview=true&stemmed=true&useAuthorId=false&types.must=GRANTED_PATENT"
                     target="_blank"
                     rel="noopener"
                 >
-
                     40+ Patents
-
                 </a>
 
-
             </span>
-
 
             <span class="proof-label">
-
-                Substantial IP generated across applied AI systems
-
+                Invented across AI products and research
             </span>
 
-
         </div>
-
 
 
         <div>
 
-
             <span class="proof-value">
-
                 Community
-
             </span>
-
 
             <span class="proof-label">
-
                 Recent focus on serving the Indian research community
-
             </span>
-
 
         </div>
 
-
     </div>
-
 
 </header>
 
 
-
 <!-- RESEARCH TO PRODUCTS -->
-
 
 <section class="section">
 
-
     <div class="section-heading">
 
-
         <h2>
-
             From Research to Real Products
-
         </h2>
 
-
         <p class="section-intro">
-
             Selected AI systems and features I have helped take from
             research ideas to real-world deployment across enterprise,
             healthcare, industrial automation, and public safety.
-
         </p>
 
-
     </div>
-
 
 
     <div class="impact-grid">
 
 
-
         <!-- ADOBE BRAND INTELLIGENCE -->
-
 
         <a
             class="impact"
@@ -1244,35 +830,25 @@ footer {
             rel="noopener"
         >
 
-
             <img
                 class="impact-image"
                 src="assets/adobe-brand-intelligence.png"
                 alt="Adobe Brand Intelligence"
             >
 
-
             <h3>
-
                 Adobe Brand Intelligence
-
             </h3>
 
-
             <p>
-
                 Brand-aware AI for agentic marketing.
                 Scales consistent brand expression across content workflows.
-
             </p>
-
 
         </a>
 
 
-
         <!-- ONE-CLICK BRAND SETUP -->
-
 
         <a
             class="impact"
@@ -1281,35 +857,25 @@ footer {
             rel="noopener"
         >
 
-
             <img
                 class="impact-image"
                 src="assets/one-click-brand-setup.png"
-                alt="One-click Brand Setup"
+                alt="Adobe Express and GenStudio One-click Brand Setup"
             >
 
-
             <h3>
-
-                One-click Brand Setup
-
+                Adobe Express &amp; GenStudio: One-click Brand Setup
             </h3>
 
-
             <p>
-
                 Automatically turns existing brand assets into reusable
                 brand systems for content creation.
-
             </p>
-
 
         </a>
 
 
-
-        <!-- ON-BRAND RECOLOR -->
-
+        <!-- APPLY BRAND RECOLOR GRAPHICS -->
 
         <a
             class="impact"
@@ -1318,35 +884,25 @@ footer {
             rel="noopener"
         >
 
-
             <img
                 class="impact-image"
                 src="assets/on-brand-recolor.png"
-                alt="On-brand Recolor"
+                alt="Adobe Express Apply Brand Recolor Graphics"
             >
 
-
             <h3>
-
-                On-brand Recolor
-
+                Adobe Express: Apply Brand Recolor Graphics
             </h3>
 
-
             <p>
-
                 AI-powered recoloring aligned with brand palettes.
                 Maintains visual identity at scale.
-
             </p>
-
 
         </a>
 
 
-
         <!-- UAI VISION -->
-
 
         <a
             class="impact"
@@ -1355,35 +911,25 @@ footer {
             rel="noopener"
         >
 
-
             <img
                 class="impact-image"
                 src="assets/uai-vision.png"
                 alt="uAI Vision"
             >
 
-
             <h3>
-
                 uAI Vision
-
             </h3>
 
-
             <p>
-
                 Automatic Patient Positioning.
                 Real-time, contactless scanning.
-
             </p>
-
 
         </a>
 
 
-
-        <!-- SIEMENS EASY SPARES -->
-
+        <!-- SIEMENS EASY SPARES IDEA -->
 
         <a
             class="impact impact-wide"
@@ -1392,41 +938,29 @@ footer {
             rel="noopener"
         >
 
-
             <img
                 class="impact-image siemens-image"
                 src="assets/siemens-easy-spares.png"
-                alt="Siemens Easy Spares"
+                alt="Siemens Easy Spares IDea"
             >
-
 
             <div>
 
-
                 <h3>
-
-                    Siemens Easy Spares
-
+                    Siemens Easy Spares IDea
                 </h3>
 
-
                 <p>
-
                     AI-powered visual identification of industrial spare parts.
                     Streamlines maintenance and service workflows.
-
                 </p>
 
-
             </div>
-
 
         </a>
 
 
-
         <!-- TAG AND TRACK -->
-
 
         <a
             class="impact impact-wide tag-track"
@@ -1435,101 +969,67 @@ footer {
             rel="noopener"
         >
 
-
             <img
                 class="impact-image tag-track-image"
                 src="assets/tag-and-track.png"
                 alt="Tag and Track airport video analytics deployment"
             >
 
-
             <div>
 
-
                 <div class="impact-kicker">
-
-                    Where it started · PhD research
-
+                    Where it started · <span class="phd-case">PhD</span> research
                 </div>
 
-
                 <h3>
-
                     Tag and Track — Airport Video Analytics
-
                 </h3>
 
-
                 <p>
-
                     During my PhD, I developed core computer vision algorithms
                     for a real-time multi-camera video analytics system deployed
-                    for evaluation with the TSA.
-
-                    The work brought research on person search and tracking
-                    into live airport environments.
-
+                    for evaluation with the TSA. The work brought research on
+                    person search and tracking into live airport environments.
                 </p>
-
 
             </div>
 
-
         </a>
 
-
     </div>
-
 
 </section>
 
 
-
 <!-- PAPERS -->
-
 
 <section class="section">
 
-
     <div class="section-heading">
 
-
         <h2>
-
             Selected Recent Papers
-
         </h2>
 
-
         <p class="section-intro">
-
             Recent work spanning vision-language models, generative AI,
             domain generalization, segmentation, and AI systems.
-
         </p>
 
-
     </div>
-
 
 
     <div class="papers">
 
 
-
         <div class="paper">
 
-
             <div class="paper-title">
-
                 Concept Regions Matter: Benchmarking CLIP with a New
                 Cluster-Importance Approach
-
             </div>
 
-
             <div class="paper-meta">
-
                 CVPR 2026 · Main Track
 
                 <a
@@ -1542,23 +1042,16 @@ footer {
 
             </div>
 
-
         </div>
-
 
 
         <div class="paper">
 
-
             <div class="paper-title">
-
                 LiteEmbed: Adapting CLIP to Rare Classes
-
             </div>
 
-
             <div class="paper-meta">
-
                 CVPR 2026 · Findings Track
 
                 <a
@@ -1571,24 +1064,17 @@ footer {
 
             </div>
 
-
         </div>
-
 
 
         <div class="paper">
 
-
             <div class="paper-title">
-
                 CoCoNO: Attention Contrast-and-Complete for Initial Noise
                 Optimization in Text-to-Image Synthesis
-
             </div>
 
-
             <div class="paper-meta">
-
                 ACM MM 2025
 
                 <a
@@ -1601,24 +1087,17 @@ footer {
 
             </div>
 
-
         </div>
-
 
 
         <div class="paper">
 
-
             <div class="paper-title">
-
                 TIDE: Training Locally Interpretable Domain Generalization
                 Models Enables Test-time Correction
-
             </div>
 
-
             <div class="paper-meta">
-
                 CVPR 2025
 
                 <a
@@ -1631,23 +1110,16 @@ footer {
 
             </div>
 
-
         </div>
-
 
 
         <div class="paper">
 
-
             <div class="paper-title">
-
                 Composing Parts for Expressive Object Generation
-
             </div>
 
-
             <div class="paper-meta">
-
                 CVPR 2025
 
                 <a
@@ -1660,24 +1132,17 @@ footer {
 
             </div>
 
-
         </div>
-
 
 
         <div class="paper">
 
-
             <div class="paper-title">
-
                 SafaRi: Adaptive Sequence Transformer for Weakly Supervised
                 Referring Expression Segmentation
-
             </div>
 
-
             <div class="paper-meta">
-
                 ECCV 2024
 
                 <a
@@ -1690,24 +1155,17 @@ footer {
 
             </div>
 
-
         </div>
-
 
 
         <div class="paper">
 
-
             <div class="paper-title">
-
                 CoPL: Contextual Prompt Learning for Vision-Language
                 Understanding
-
             </div>
 
-
             <div class="paper-meta">
-
                 AAAI 2024
 
                 <a
@@ -1720,24 +1178,17 @@ footer {
 
             </div>
 
-
         </div>
-
 
 
         <div class="paper">
 
-
             <div class="paper-title">
-
                 A-STAR: Test-time Attention Segregation and Retention
                 for Text-to-image Synthesis
-
             </div>
 
-
             <div class="paper-meta">
-
                 ICCV 2023
 
                 <a
@@ -1750,129 +1201,85 @@ footer {
 
             </div>
 
-
         </div>
 
-
     </div>
-
 
 </section>
 
 
-
 <!-- RESEARCH COMMUNITY -->
-
 
 <section class="section">
 
-
     <div class="section-heading">
 
-
         <h2>
-
             Research Community
-
         </h2>
-
 
     </div>
 
 
-
     <p class="service-lead">
-
         My recent academic service has increasingly focused on helping
         strengthen the Indian research community.
-
     </p>
-
 
 
     <div class="service-list">
 
 
-
         <div class="service-item">
 
-
             <div class="service-role">
-
                 Program Chair
-
             </div>
-
 
             <div class="service-detail">
-
                 ACM CODS 2026 · ACM CODS 2025
-
             </div>
-
 
         </div>
 
 
-
         <div class="service-item">
 
-
             <div class="service-role">
-
                 Area Chair
-
             </div>
 
-
             <div class="service-detail">
-
                 CVPR 2026, 2022 · ECCV 2026 ·
                 WACV 2026–2024 · BMVC 2025–2024
-
             </div>
 
-
         </div>
-
 
 
         <div class="service-item">
 
-
             <div class="service-role">
-
                 Associate Editor
-
             </div>
-
 
             <div class="service-detail">
-
                 Pattern Recognition · 2021–
-
             </div>
-
 
         </div>
 
-
     </div>
-
 
 </section>
 
 
-
 <footer>
-
     Srikrishna Karanam
-
 </footer>
 
 
 </div>
-
 
 </body>
 
