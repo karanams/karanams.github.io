@@ -521,6 +521,15 @@ footer {
     }
 }
 
+
+/* ONE-CLICK BRAND SETUP IMAGE FIX */
+
+.impact:not(.tag-track) .brand-setup-image {
+    object-fit: contain;
+    object-position: center;
+    background: #ffffff;
+}
+
 </style>
 </head>
 
@@ -619,7 +628,7 @@ footer {
             rel="noopener"
         >
             <img
-                class="impact-image"
+                class="impact-image brand-setup-image"
                 src="assets/one-click-brand-setup.png"
                 alt="Adobe GenStudio and Express One-click Brand Setup"
             >
