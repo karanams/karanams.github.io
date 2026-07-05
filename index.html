@@ -432,6 +432,95 @@ footer {
     text-transform: none;
 }
 
+
+/* SIMPLER + MORE POWERFUL */
+.section-heading:has(h2:only-child) { display: block; margin-bottom: 34px; }
+.proof-value { font-size: 22px; }
+
+.tag-track {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 28px;
+    align-items: center;
+    margin-top: 18px;
+    padding: 30px 0 0;
+    border-top: 1px solid var(--line);
+    text-align: left;
+    text-decoration: none;
+}
+.tag-track-image {
+    width: 190px;
+    height: 190px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 14px;
+}
+.tag-track-copy { width: auto; margin: 0; text-align: left; }
+.tag-track-copy .impact-kicker,
+.tag-track-copy h3,
+.tag-track-copy p { text-align: left; }
+.tag-track-copy h3 { margin: 7px 0 6px; font-size: 17px; }
+.tag-track-copy p { max-width: 520px; }
+
+.paper-meta {
+    margin: 0 0 7px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+.paper-meta a { text-transform: lowercase; letter-spacing: 0; }
+
+@media (max-width: 560px) {
+    .tag-track {
+        grid-column: auto;
+        grid-template-columns: 96px minmax(0, 1fr);
+        gap: 18px;
+        padding-top: 26px;
+    }
+    .tag-track-image { width: 96px; height: 96px; }
+    .tag-track-copy h3 { font-size: 15px; }
+    .tag-track-copy p { font-size: 13px; }
+}
+
+
+/* FINAL POLISH */
+
+.contact-item {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 7px;
+}
+
+.contact-label {
+    color: var(--link);
+    font-weight: 400;
+}
+
+.impact:not(.tag-track) .siemens-image {
+    object-fit: contain;
+    object-position: center;
+    background: #ffffff;
+    padding: 8px;
+}
+
+.service-lead {
+    max-width: none;
+    margin: 0 0 42px;
+    text-align: left;
+}
+
+@media (max-width: 560px) {
+    .contact-item {
+        width: 100%;
+    }
+
+    .impact:not(.tag-track) .siemens-image {
+        padding: 6px;
+    }
+}
+
 </style>
 </head>
 
@@ -446,8 +535,8 @@ footer {
             <h1>Srikrishna Karanam</h1>
 
             <p class="thesis">
-                I develop novel computer vision and machine learning ideas
-                and turn them into real-world AI products.
+                I develop new computer vision and machine learning ideas
+                and build them into AI products used in the real world.
             </p>
 
             <p class="bio">
@@ -462,9 +551,10 @@ footer {
             </p>
 
             <div class="contact">
-                <a href="mailto:skaranam@adobe.com">skaranam@adobe.com</a>
+                <a class="contact-item" href="mailto:skaranam@adobe.com">
+                    <span class="contact-label">Email</span>
+                </a>
                 <a href="https://scholar.google.com/citations?user=G2-skyUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-                <a href="https://dblp.org/pid/161/6110.html" target="_blank" rel="noopener">DBLP</a>
                 <a href="https://www.lens.org/lens/search/patent/list?q=srikrishna%20karanam&p=0&n=10&s=_score&d=%2B&f=false&e=false&l=en&authorField=author&dateFilterField=publishedDate&orderBy=%2B_score&presentation=false&preview=true&stemmed=true&useAuthorId=false&types.must=GRANTED_PATENT" target="_blank" rel="noopener">Patents</a>
             </div>
         </div>
@@ -473,14 +563,12 @@ footer {
     <div class="proof">
         <div>
             <span class="proof-value">Shipped AI</span>
-            <span class="proof-label">Enterprise AI · Healthcare · Industrial Automation · Public Safety</span>
+            <span class="proof-label">Enterprise · Healthcare · Industry · Public Safety</span>
         </div>
 
         <div>
-            <span class="proof-value">Research</span>
-            <span class="proof-label">
-                50+ papers · CVPR · ECCV · ICCV · and other leading venues
-            </span>
+            <span class="proof-value">50+ Papers</span>
+            <span class="proof-label">CVPR · ECCV · ICCV · more</span>
         </div>
 
         <div>
@@ -488,13 +576,13 @@ footer {
                 <a href="https://www.lens.org/lens/search/patent/list?q=srikrishna%20karanam&p=0&n=10&s=_score&d=%2B&f=false&e=false&l=en&authorField=author&dateFilterField=publishedDate&orderBy=%2B_score&presentation=false&preview=true&stemmed=true&useAuthorId=false&types.must=GRANTED_PATENT" target="_blank" rel="noopener">40+ Patents</a>
             </span>
             <span class="proof-label">
-                Invented across AI products and research
+                Across AI research and products
             </span>
         </div>
 
         <div>
             <span class="proof-value">Community</span>
-            <span class="proof-label">Recent focus on serving the Indian research community</span>
+            <span class="proof-label">Serving the Computer Vision and Indian research community</span>
         </div>
     </div>
 </header>
@@ -502,10 +590,6 @@ footer {
 <section class="section">
     <div class="section-heading">
         <h2>Selected Product Impact</h2>
-        <p class="section-intro">
-            Selected AI systems and features I have helped take from research ideas to real-world deployment
-            across enterprise, healthcare, industrial automation, and public safety.
-        </p>
     </div>
 
     <div class="impact-grid">
@@ -577,7 +661,7 @@ footer {
             >
             <h3>Adobe Acrobat: On-brand Generate Cover Page</h3>
             <p>
-                Generate cover pages following your PDF's brand colors.
+                Automatically design a cover page that matches your document’s brand colors.
             </p>
         </a>
 
@@ -606,7 +690,7 @@ footer {
             rel="noopener"
         >
             <img
-                class="impact-image"
+                class="impact-image siemens-image"
                 src="assets/siemens-easy-spares.png"
                 alt="Siemens Easy Spares IDea"
             >
@@ -617,29 +701,19 @@ footer {
             </p>
         </a>
 
-        <a
-            class="impact tag-track"
+        <a class="tag-track"
             href="https://repository.library.northeastern.edu/downloads/neu:4f241n899?datastream_id=content"
-            target="_blank"
-            rel="noopener"
-        >
-            <img
-                class="tag-track-image"
-                src="assets/tag-and-track.png"
-                alt="Tag and Track airport video analytics deployment"
-            >
+            target="_blank" rel="noopener">
+            <img class="tag-track-image" src="assets/tag-and-track.png"
+                alt="Tag and Track airport video analytics deployment">
             <div class="tag-track-copy">
                 <div class="impact-kicker">
                     <span class="kicker-uppercase">Where it started ·</span>
                     <span class="phd-case">PhD</span> research
                 </div>
                 <h3>Tag and Track — Airport Video Analytics</h3>
-                <p>
-                    During my PhD, I developed core computer vision algorithms
-                    for a real-time multi-camera video analytics system deployed
-                    for evaluation with the TSA. The work brought research on
-                    person search and tracking into live airport environments.
-                </p>
+                <p>Computer vision research developed into a real-time multi-camera
+                system deployed for evaluation with the TSA.</p>
             </div>
         </a>
 
@@ -650,52 +724,48 @@ footer {
 <section class="section">
     <div class="section-heading">
         <h2>Selected Recent Papers</h2>
-        <p class="section-intro">
-            Recent work spanning vision-language models, generative AI,
-            domain generalization, segmentation, and AI systems.
-        </p>
     </div>
 
     <div class="papers">
 
         <div class="paper">
-            <div class="paper-title">Concept Regions Matter: Benchmarking CLIP with a New Cluster-Importance Approach</div>
             <div class="paper-meta">CVPR 2026 · Main Track <a href="https://arxiv.org/pdf/2511.12978" target="_blank" rel="noopener">pdf</a></div>
+            <div class="paper-title">Concept Regions Matter: Benchmarking CLIP with a New Cluster-Importance Approach</div>
         </div>
 
         <div class="paper">
-            <div class="paper-title">LiteEmbed: Adapting CLIP to Rare Classes</div>
             <div class="paper-meta">CVPR 2026 · Findings Track <a href="https://arxiv.org/pdf/2601.09661" target="_blank" rel="noopener">pdf</a></div>
+            <div class="paper-title">LiteEmbed: Adapting CLIP to Rare Classes</div>
         </div>
 
         <div class="paper">
-            <div class="paper-title">CoCoNO: Attention Contrast-and-Complete for Initial Noise Optimization in Text-to-Image Synthesis</div>
             <div class="paper-meta">ACM MM 2025 <a href="https://arxiv.org/pdf/2411.16783" target="_blank" rel="noopener">pdf</a></div>
+            <div class="paper-title">CoCoNO: Attention Contrast-and-Complete for Initial Noise Optimization in Text-to-Image Synthesis</div>
         </div>
 
         <div class="paper">
-            <div class="paper-title">TIDE: Training Locally Interpretable Domain Generalization Models Enables Test-time Correction</div>
             <div class="paper-meta">CVPR 2025 <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Agarwal_TIDE_Training_Locally_Interpretable_Domain_Generalization_Models_Enables_Test-time_Correction_CVPR_2025_paper.pdf" target="_blank" rel="noopener">pdf</a></div>
+            <div class="paper-title">TIDE: Training Locally Interpretable Domain Generalization Models Enables Test-time Correction</div>
         </div>
 
         <div class="paper">
-            <div class="paper-title">Composing Parts for Expressive Object Generation</div>
             <div class="paper-meta">CVPR 2025 <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Rangwani_Composing_Parts_for_Expressive_Object_Generation_CVPR_2025_paper.pdf" target="_blank" rel="noopener">pdf</a></div>
+            <div class="paper-title">Composing Parts for Expressive Object Generation</div>
         </div>
 
         <div class="paper">
-            <div class="paper-title">SafaRi: Adaptive Sequence Transformer for Weakly Supervised Referring Expression Segmentation</div>
             <div class="paper-meta">ECCV 2024 <a href="https://arxiv.org/abs/2407.02389" target="_blank" rel="noopener">pdf</a></div>
+            <div class="paper-title">SafaRi: Adaptive Sequence Transformer for Weakly Supervised Referring Expression Segmentation</div>
         </div>
 
         <div class="paper">
-            <div class="paper-title">CoPL: Contextual Prompt Learning for Vision-Language Understanding</div>
             <div class="paper-meta">AAAI 2024 <a href="https://arxiv.org/abs/2307.00910" target="_blank" rel="noopener">pdf</a></div>
+            <div class="paper-title">CoPL: Contextual Prompt Learning for Vision-Language Understanding</div>
         </div>
 
         <div class="paper">
-            <div class="paper-title">A-STAR: Test-time Attention Segregation and Retention for Text-to-image Synthesis</div>
             <div class="paper-meta">ICCV 2023 <a href="https://arxiv.org/abs/2306.14544" target="_blank" rel="noopener">pdf</a></div>
+            <div class="paper-title">A-STAR: Test-time Attention Segregation and Retention for Text-to-image Synthesis</div>
         </div>
 
     </div>
@@ -707,7 +777,7 @@ footer {
     </div>
 
     <p class="service-lead">
-        My recent academic service has increasingly focused on helping strengthen the Indian research community.
+        Recent academic service focused on the Computer Vision and Indian research community.
     </p>
 
     <div class="service-list">
